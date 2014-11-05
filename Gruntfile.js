@@ -97,14 +97,20 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('build', [
-    'clean',
-    'pages',
-    'compass',
-    'copy'
-  ]);
+grunt.registerTask('build', function(target) {
+    if (target === 'GHPages') {
+      grunt.config('pages.posts.options.data.baseUrl', '/foursquare-ios-url/');
+    }
 
-  grunt.registerTask('deploy', ['build', 'gh-pages']);
+    grunt.task.run([
+      'clean',
+      'pages',
+      'compass',
+      'copy'
+    ]);
+  });
+
+  grunt.registerTask('deploy', ['build:GHPages', 'gh-pages']);
 
   grunt.registerTask('server', [
     'build',
