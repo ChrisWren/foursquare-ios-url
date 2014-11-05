@@ -1,0 +1,19 @@
+{
+  "name": "y",
+  "version": "y",
+  "homepage": "https://github.com/ChrisWren/foursquare-ios-url",
+  "authors": [
+    "ChrisWren <cthewren@gmail.com>"
+  ],
+  "description": "y",
+  "main": "y",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
