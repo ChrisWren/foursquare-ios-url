@@ -6,3 +6,6 @@ $('#foursquareVenueURL').on('paste', function() {
     }
   }, 0);
 })
+$('#clear-input').click(function() {
+  $('#foursquareVenueURL').val('');
+});
